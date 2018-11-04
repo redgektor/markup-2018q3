@@ -5,53 +5,77 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Markup-2018q3</title>
+		<link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+		<link href="css/fonts.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 	<header>
 		<section class="menu">
 			<div class="wrapper">
-				<h1><img src="/images/logo.png" alt="GhostHost"></h1>
-				<nav>
-					<ul class="main-nav">
-						<li class="main-nav__item"><a class="main-nav__link" href="">Home</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Domain</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Hosting</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Clients</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Blog</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Support</a></li>
+				<nav class="main-nav">
+					<a class="logo" href="/"><img class="logo-img" src="images/logo.png" alt="GhostHost"></a>
+					<ul class="nav-list">
+						<li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Domain</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Hosting</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Clients</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+						<li class="nav-item"><a class="nav-link" href="">Support</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
 		<section class="greeting">
 			<div class="wrapper">   
-				<div class="txt">
-					<h2 class="title">Hello</h2>
+				<div class="text">
+					<h2 class="title">Hello!</h2>
 					<p>We love our work...<br>And We're taking it seriously...</p>
 				</div>
 			</div>
 		</section>
 		<section class="buttons">
-			<a href="#">Login</a>
-			<a href="#">Register</a>
+			<a class="buttons-log" href="#">Login</a>
+			<a class="buttons-reg" href="#">Register</a>
 		</section>
 	</header>
 	<main>
 		<section class="buy">
 			<div class="wrapper">
-				<div class="txt">
-					<h2 class="title">Would you like to buy a new domain ?</h2>
+				<div class="text">
+					<h1 class="title">Would you like to buy a new domain ?</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
 				</div>
 				<form class="order" action="#" class="" method="post">
-					<span class="order-item order-item--pre">www.</span>
-					<input class="order-item order-item--dom" type="text">
-					<select  class="order-item order-item--zone" name="domain-zone" id="">
-						<option value="com">.com</option>
-						<option value="net">.net</option>
-						<option value="org">.org</option>
-					</select>
+					<div class="order-item order-item--pre">
+						<span class="order-pre">www.</span>
+					</div>
+					<div class="order-item order-item--dom">
+						<input class="order-dom" type="text" placeholder="What do you want?">
+					</div>
+					<div class="order-item order-item--zone">
+						<select  class="order-zone" name="domain-zone" id="">
+							<option value="com">.com</option>
+							<option value="net">.net</option>
+							<option value="org">.org</option>
+						</select>
+					</div>					
 				</form>
+				<table class="buy-table">
+					<tr>
+						<th scope="row">.COM</th>
+						<td>1 year</td>
+						<td>$9.00 USD</td>
+						<td>Transfer Price No</td>
+					</tr>
+					<tr>
+						<th scope="row">.NET</th>
+						<td>1 year</td>
+						<td>$9.00 USD</td>
+						<td>Transfer Price No</td>	
+					</tr>
+				</table>
 			</div>
 		</section>
 		<article class="offer">
@@ -97,7 +121,7 @@
 						</section>                
 					</article>
 
-					<article class="offer-item offer-item--basic">
+					<article class="offer-item offer-item--normal">
 						<h3 class="offer-title">NORMAL PACKAGE</h3>
 						<section class="prop">
 							<ul class="prop-list">
@@ -135,7 +159,7 @@
 						</section>                
 					</article>
 
-					<article class="offer-item offer-item--basic">
+					<article class="offer-item offer-item--big">
 						<h3 class="offer-title">BIG PACKAGE</h3>
 						<section class="prop">
 							<ul class="prop-list">
@@ -173,7 +197,7 @@
 						</section>                
 					</article>
 
-					<article class="offer-item offer-item--basic">
+					<article class="offer-item offer-item--biggest">
 						<h3 class="offer-title">BIGGEST PACKAGE</h3>
 						<section class="prop">
 							<ul class="prop-list">
@@ -212,11 +236,12 @@
 					</article>
 				</article>
 			</div>
-		</section>
+		</article>
+
 		<section class="about">
 			<div class="wrapper">
-				<div class="txt">
-					<h2 class="title">About Us</h2>
+				<div class="text">
+					<h2 class="title"><b>About</b> Us</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 					Praesent feugiat eget diam sit amet molestie.Curabitur. 
 					ut ipsum bibendum tortor lacinia fermentum nec joeıa.
@@ -225,37 +250,33 @@
 				</div>
 				<article class="team">
 					<section class="team-item">
-						<img class="team-photo" src="../images/jonnyDoe.jpg" alt="#">
+						<img class="team-photo" src="images/jonnyDoe.jpg" alt="#">
 						<h3 class="team-name">Jonny Doe</h3>
 						<p class="team-prop">Designer</p>
 						<div class="social">
-							<a class="social-link social-link--fb" href="#"></a>
-							<a class="social-link social-link--tw" href="#"></a>
-							<a class="social-link social-link--git" href="#"></a>
+							<a class="social-link social-link--fb" href="#"><i class="fab fa-facebook-f"></i></a>
+							<a class="social-link social-link--tw" href="#"><i class="fab fa-twitter"></i></a>
+							<a class="social-link social-link--git" href="#"><i class="fas fa-link"></i></a>
 						</div>
 					</section>
-				</article>
-				<article class="team">
 					<section class="team-item">
-						<img class="team-photo" src="../images/johnDoe.jpg" alt="#">
+						<img class="team-photo" src="images/johnDoe.jpg" alt="#">
 						<h3 class="team-name">John Doe</h3>
 						<p class="team-prop">Designer</p>
 						<div class="social">
-							<a class="social-link social-link--fb" href="#"></a>
-							<a class="social-link social-link--tw" href="#"></a>
-							<a class="social-link social-link--git" href="#"></a>
+							<a class="social-link social-link--fb" href="#"><i class="fab fa-facebook-f"></i></a>
+							<a class="social-link social-link--tw" href="#"><i class="fab fa-twitter"></i></a>
+							<a class="social-link social-link--git" href="#"><i class="fas fa-link"></i></a>
 						</div>
 					</section>
-				</article>
-				<article class="team">
 					<section class="team-item">
-						<img class="team-photo" src="../images/jonatanDoe.jpg" alt="#">
+						<img class="team-photo" src="images/jonatanDoe.jpg" alt="#">
 						<h3 class="team-name">Jonatan Doe</h3>
 						<p class="team-prop">Designer</p>
 						<div class="social">
-							<a class="social-link social-link--fb" href="#"></a>
-							<a class="social-link social-link--tw" href="#"></a>
-							<a class="social-link social-link--git" href="#"></a>
+							<a class="social-link social-link--fb" href="#"><i class="fab fa-facebook-f"></i></a>
+							<a class="social-link social-link--tw" href="#"><i class="fab fa-twitter"></i></a>
+							<a class="social-link social-link--git" href="#"><i class="fas fa-link"></i></a>
 						</div>
 					</section>
 				</article>
@@ -264,13 +285,37 @@
 		<section class="review">
 			<div class="wrapper">
 				<section class="review-list">
-					<article class="review--item">
+					<article class="review-item active">
+						<div class="text">
+							<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”</p>
+							<h3 class="review-name">Jonny Doe</h3>
+							<div class="paging">
+								<span class="paging-item active"></span>
+								<span class="paging-item"></span>
+								<span class="paging-item"></span>
+							</div>
+						</div>
+					</article>
+					<article class="review-item">
 						<div class="text">
 							<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”</p>
 							<h3 class="review-name">John Doe</h3>
+							<div class="paging">
+								<span class="paging-item active"></span>
+								<span class="paging-item"></span>
+								<span class="paging-item"></span>
+							</div>
 						</div>
-						<div class="review-id">
-							<span class=""></span>
+					</article>
+					<article class="review-item">
+						<div class="text">
+							<p>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas lacinia faucibus enimqui interdum dolor pulvinar vitae.”</p>
+							<h3 class="review-name">Jonatan Doe</h3>
+							<div class="paging">
+								<span class="paging-item active"></span>
+								<span class="paging-item"></span>
+								<span class="paging-item"></span>
+							</div>
 						</div>
 					</article>
 				</section>
@@ -279,27 +324,31 @@
 		<section class="feat">
 			<div class="wrapper">
 				<section class="feat-list">
-					<section class="feat-item">
+					<section class="feat-item feat-item--bolt">
+						<a href="#" class="feat-link"></a>
 						<h3 class="feat-title">Fast Servers</h3>
-						<div class="txt">
+						<div class="text">
 							<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
 						</div>
 					</section>
-					<section class="feat-item">
+					<section class="feat-item feat-item--cloud">
+						<a href="#" class="feat-link"></a>
 						<h3 class="feat-title">Cloud Servers</h3>
-						<div class="txt">
+						<div class="text">
 							<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
 						</div>
 					</section>
-					<section class="feat-item">
+					<section class="feat-item feat-item--arrow">
+						<a href="#" class="feat-link"></a>
 						<h3 class="feat-title">Domain Transfer</h3>
-						<div class="txt">
+						<div class="text">
 							<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
 						</div>
 					</section>
-					<section class="feat-item">
+					<section class="feat-item feat-item--comment">
+						<a href="#" class="feat-link"></a>
 						<h3 class="feat-title">Live Support</h3>
-						<div class="txt">
+						<div class="text">
 							<p>Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
 						</div>
 					</section>
@@ -310,14 +359,14 @@
 	<footer>
 		<section class="menu">
 			<div class="wrapper">
-				<h1><img src="/images/logo.png" alt="GhostHost"></h1>
-				<nav>
-					<ul class="main-nav">
-						<li class="main-nav__item"><a class="main-nav__link" href="">Home</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">About Us</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Blog</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Policy</a></li>
-						<li class="main-nav__item"><a class="main-nav__link" href="">Contact</a></li>
+				<nav class="main-nav">
+					<a class="logo" href="/"><img class="logo-img" src="images/logo.png" alt="GhostHost"></a>
+					<ul class="nav-list">
+						<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Policy</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -325,17 +374,19 @@
 		<section class="info">
 			<div class="wrapper">
 				<section class="info-item">
-					<div class="txt">
+					<div class="text">
 						<p>Lorem ipsum dolor sit amet, consecteteeseurı adipiscing elit. Donec mollis commodoeesene que, non commodo risus volutpat vel.</p>
 						<p>Design by Mert Can Eyriyer.</p>
 					</div>
 				</section>
-				<section class="info-item">
+				<section class="info-item info-item--keys">
 					<ul class="key-list">
 						<li class="key-item"><a class="key-link" href="#">Support</a></li>
 						<li class="key-item"><a class="key-link" href="#">Account</a></li>
 						<li class="key-item"><a class="key-link" href="#">Prodact Catalog</a></li>
 						<li class="key-item"><a class="key-link" href="#">Shortcodes</a></li>
+					</ul>
+					<ul class="key-list">
 						<li class="key-item"><a class="key-link" href="#">Site Map</a></li>
 						<li class="key-item"><a class="key-link" href="#">Whois Search</a></li>
 						<li class="key-item"><a class="key-link" href="#">Web Mail</a></li>
